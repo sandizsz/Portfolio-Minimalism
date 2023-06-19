@@ -1,0 +1,130 @@
+
+.project-intro {
+    display: flex;
+      justify-content: space-between;
+      padding-top: 30px;
+  }
+  .project .project-title {
+    color: #606887;
+    color: var(--accentColor);
+    margin: calc(var(--top-internal-margin)*2) var(--left-right-margin) 0
+  }
+  
+  .project .project-intro {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--top-internal-margin) var(--left-right-margin) var(--top-internal-margin)
+  }
+  
+  .project-description {
+    flex: 50%;
+    font-size: 16px !important;
+  }
+  
+ 
+  
+ .project-intro .project-data {
+    width: 50%;
+    padding-right: var(--left-right-internal-margin)
+  }
+
+  
+  @media only screen and (max-width: 1000px) {
+    .project-intro{
+        flex-direction: column;
+
+        .project-data {
+            width: 100%;
+        }
+
+        .project-description {
+            flex: 100%;
+            padding-top: 50px;
+        }
+    }
+  }
+  
+  
+  .project-intro {
+    max-width: 1440px;
+  }
+  
+  
+  .project .project-intro { 
+      display: flex; 
+      justify-content: space-between; 
+   
+      margin: var(--top-internal-margin) var(--left-right-margin) var(--top-internal-margin);
+  } 
+  
+  
+  
+
+  :root { 
+      --left-right-margin: 240px; 
+      --left-right-internal-margin: 24px; 
+      --top-internal-margin: 24px; 
+  } 
+  
+
+  
+  
+  .project-data  { 
+      width: 50%; 
+      padding-right: var(--left-right-internal-margin);
+  } 
+  
+  
+  
+  table td  { 
+      vertical-align: top; 
+      padding: 0 var(--left-right-internal-margin) var(--top-internal-margin) 0;
+  } 
+  
+  table tr:last-child td  { 
+      vertical-align: top; 
+      padding: 0 var(--left-right-internal-margin) 0 0;
+  } 
+  
+  h6 { 
+      margin:  0; 
+      font-weight:  unset;
+      text-transform: uppercase; 
+      font-variation-settings: "wght" 800,"wdth" 125; 
+      font-size: 16px;
+  } 
+  
+  table td h6  { 
+      padding-right: var(--left-right-internal-margin); 
+      text-overflow: ellipsis; 
+      overflow-x: clip;
+  } 
+  
+  h6  { 
+      padding-right:  var(--left-right-internal-margin); 
+      text-overflow:  ellipsis; 
+      overflow-x:  clip;
+  } 
+  
+  ul { 
+      margin: 0; 
+      padding: 0; 
+      list-style: none;
+  } 
+  
+  .flex-column {
+    img {
+        max-height: 50px;
+        max-width: 100px;
+      }
+      display: flex;
+      flex-direction: column;
+  }
+
+
+  li { 
+      font-size: 16px;
+     
+  } 
+  
+  
