@@ -91,10 +91,20 @@ html, body {
   margin: 80px 0;
   z-index: 2 !important;
 }
-.header .header-container h1 {
-  font-family: Neue-Bold;
-  font-size: 5.5rem;
+.header {
+
+  .header-container h1 {
+    font-family: Neue-Bold;
+    font-size: 5.5rem;
+  }
+
+  .header-container h2 {
+    font-size: 3rem;
+    line-height: 1rem;
+  }
 }
+
+
 
 @media (max-width: 900px) {
   .header .header-container h1 {
@@ -103,6 +113,7 @@ html, body {
 }
 /* hero-image */
 .hero-image {
+  padding-top: 30px;
   width: 100%;
   margin-top: -300px;
 }
