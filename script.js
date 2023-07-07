@@ -9,7 +9,7 @@ timeline
     { left: "-100px" }, // Starting position off the left side
     { left: "calc(50% - 50px)", duration: 1, ease: "Bounce.easeIn" } // Fly-in to the center
   )
-  .from(".site-title, .site-menu", { y: -20, opacity: 0, duration: 0.7, ease: "ease.in" }, "-=0.0")
+  .from(".site-title, .menu-icon", { y: -20, opacity: 0, duration: 0.7, ease: "ease.in" }, "-=0.0")
   .from(".hero-image-wrapper", { y: -50, opacity: 0, duration: 0.5, ease: "Power4.easeOut" }, "-=0.3")
   .from(".project-name, .divider", { y: -50, opacity: 0, duration: 0.5, ease: "Power4.easeOut" }, "-=0.5")
   .fromTo(
@@ -60,3 +60,17 @@ timeline
   
 
   /* observe project images -- END */
+
+
+  /* Menu */
+
+  function openMenu()
+  {
+      document.getElementById('container-menu').style.right='0%';
+      document.getElementById('menu').style.opacity='1';
+  }
+  function closeMenu()
+  {
+      document.getElementById('container-menu').style.right='-100%';
+      document.getElementById('menu').style.opacity='0';
+  }

@@ -21,21 +21,20 @@
                 <div class="navbar">
                     <div class="navbar-container">
 
-                        <div class="site-title"><a href="/index.html"><img src="/images/favicon.png" alt="sandis logo"></a></div>
-                        <div class="site-menu">
-
-                            <div class="menu-icon">
-                                <input class="menu-icon__cheeckbox" type="checkbox" />
-                                <div>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </div>
-
-                        </div>
-                   
-
-                    </div>
+                      <div class="site-title"><a href="/index.html"><img src="/images/favicon.png" alt="sandis logo"></a></div>
+                      <div class="menu-icon"><i class="fa fa-bars" onclick="openMenu()"></i></div> 
+                       <div id="container-menu">
+                        <div id="close" class="close" onclick="closeMenu()"></div>
+                        <ul id="menu">
+                           <li><a href="/index.html">Home</a></li>
+                           <li><a href="/index.html#projects">Projects</a></li>
+                           <li><div class="button" id="button-3">
+                             <div id="circle"></div>
+                             <a href="/images/Sandis Sirmais CV.pdf" target=”_blank”>Download CV 🡓</a>
+                           </div>
+                         </li>
+                         </ul> 
+                     </div>
 
                 </div>
 
