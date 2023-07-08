@@ -325,16 +325,20 @@ html, body {
     transform: translate3d(calc(-100% - 6vw), -30%, 0) translate3d(0, 20px, 0);
 }
 
-@media (max-width: 900px) {
-    .menu__item-img {
-        max-height: 150px;
-    }
-}
+
 
 .menu__item-link:hover + .menu__item-img {
     opacity: 1;
     transform: translate3d(calc(-100% - 6vw), -30%, 0) rotate3d(0, 0, 1, 4deg);
     transition: all 0.4s;
+}
+
+@media only screen and (max-width: 900px) {
+  .menu__item-img {
+    max-width: 400px;
+    height: auto;
+}
+
 }
 
 .menu {
@@ -746,7 +750,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
       display: block;
     max-width: 950px;
     max-height: 739px;
-    width: auto;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     border-radius: 20px;
